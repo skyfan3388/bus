@@ -236,11 +236,14 @@ let extraClass="";
 let boxClass="route-box";
 
 if(m1===0){
-statusText="快啲衝啊！！";
+statusText="準備金扣人工啦！！";
 extraClass="urgent";
 boxClass+=" urgent-box";
+}else if(m1===1){
+statusText="快啲衝啊！！";
+extraClass="urgent";
 }else if(m1<=3){
-statusText="仲唔跑？😡";
+statusText="仲唔跑？！😡";
 extraClass="urgent";
 }
 

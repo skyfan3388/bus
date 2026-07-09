@@ -244,7 +244,8 @@ statusText="仲唔跑？😡";
 extraClass="urgent";
 }
 
-const station = cleanStationName(stopNames[r.stopId]||"--");
+const station = stopNames[r.stopId] || "--";
+//const station = cleanStationName(stopNames[r.stopId]||"--");
 
 row.innerHTML=`
 <div class="${boxClass}">${r.route}</div>
